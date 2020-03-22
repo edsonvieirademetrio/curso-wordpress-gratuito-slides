@@ -83,7 +83,7 @@
   <body>
     <header role="banner">
       <nav role="navigation">
-        <p class="logo"><a href="/" title="O novo WordPress, Gutenberg">O novo WordPress, Gutenberg</a></p>
+        <p class="logo"><a href="/" title="O novo WordPress, Gutenberg" id="logo-img">O novo WordPress, Gutenberg</a></p>
         <ul>
           <li class="github">
             <a rel="external" href="https://github.com/edsonvieirademetrio" title="Github" target="blank">
@@ -407,6 +407,10 @@
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
+    <script type="text/javascript">
+    	const url  = window.location.href
+    	document.getElementById("logo-img").href=url
+    </script>
 
   </body>
 </html>
